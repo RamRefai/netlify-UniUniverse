@@ -17,7 +17,7 @@ function NavigationMenu() {
             </Link>
         </li>
         <li>
-            <Link href=".../implementation/courseFlowSelection">
+            <Link href="../implementation/courseFlowSelection">
                 <a>Course Flow Diagrams</a>
             </Link>
         </li>
