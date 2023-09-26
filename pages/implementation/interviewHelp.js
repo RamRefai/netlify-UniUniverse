@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+
+
 function InterviewHelp() {
   // State to track user selections
   const [generateQuestions, setGenerateQuestions] = useState(false);
@@ -17,7 +19,7 @@ function InterviewHelp() {
       const apiEndpoint = 'https://api.openai.com/v1/chat/completions';
   
       // Define your OpenAI API key (replace with your actual API key)
-      const apiKey = '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';
+      
   
       // Define the prompt text (use the jobRole state or customQuestions state, depending on the user's choice)
       const promptText = generateQuestions ? `Generate interview questions for ${jobRole}` : customQuestions;
@@ -30,10 +32,11 @@ function InterviewHelp() {
         max_tokens: 50, // Adjust the number of tokens as needed
       };
   
+      
       // Define request headers, including your API key
       const headers = {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`,
+        'Authorization': `Bearer ${process.env.API_KEY}`,
       };
   
       // Make the API request using Axios

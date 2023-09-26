@@ -8,10 +8,14 @@
     "export": "next export"
   },
   "dependencies": {
+    "@types/netlify-identity-widget": "^1.9.3",
     "axios": "^1.5.0",
+    "dotenv": "^16.3.1",
+    "netlify-identity-widget": "^1.9.2",
     "next": "^12.1.5",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "netlify-plugin-cypress": "^1.2.0"

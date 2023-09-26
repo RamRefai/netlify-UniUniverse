@@ -19,15 +19,18 @@ function CampusSelection() {
     }
   };
 
+
+
+
   return (
-    <div>
+    <div id="campusDropDownContainer">
       <select id="campusDropdown" onChange={handleCampusChange} value={selectedCampus}>
         <option value="">Select a campus</option>
         <option value="campus1">Campus 1</option>
 
         {/* Add more options as needed */}
       </select>
-      <button onClick={handleNext}>Next</button>
+      <button id = "campusNextButton" onClick={handleNext}>Next</button>
     </div>
   );
 }
