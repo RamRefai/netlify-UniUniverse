@@ -1,5 +1,3 @@
-import Footer from '@components/footer.js'
-
 function parkingSelection() {
 
 
@@ -13,8 +11,6 @@ function parkingSelection() {
         allow="fullscreen" // Allow fullscreen for better user experience
         style={{ border: 'none' }} // Optional: Remove iframe border
       ></iframe>
-
-      <Footer/>
         </div>
     )}
 

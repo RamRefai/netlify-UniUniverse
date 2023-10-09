@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
 import CampusSelection from './CampusSelection'
 import Application from './_app'
 import netlifyIdentity from 'netlify-identity-widget'
@@ -88,7 +86,7 @@ export default function Home() {
       <main>
  
         <Zoom>
-        <Header title="Choose your campus" />
+          <h1>Choose your Campus</h1>
         <CampusSelection/>
         </Zoom>
         
@@ -104,7 +102,6 @@ export default function Home() {
     
  
       </main>
-      <Footer />
     </div>
   )
 }

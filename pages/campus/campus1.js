@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
 import CampusSelection from 'pages/CampusSelection.js'
 import NavigationMenu from 'pages/NavigationMenu';
 import InterviewHelp from 'pages/implementation/interviewHelp';
@@ -23,7 +21,6 @@ function Campus1() {
     <aside>
         <NavigationMenu/>
     </aside>
-      <Footer/>
     </div>
   );
 }
