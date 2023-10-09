@@ -4,6 +4,8 @@ import Footer from '@components/Footer'
 import CampusSelection from './CampusSelection'
 import Application from './_app'
 import netlifyIdentity from 'netlify-identity-widget'
+import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 export default function Home() {
   
@@ -85,17 +87,18 @@ export default function Home() {
 
       <main>
  
-        
+        <Zoom>
         <Header title="Choose your campus" />
-
+        <CampusSelection/>
+        </Zoom>
+        
         
         <p className="description">
         
         </p>
 
 
-
-      <CampusSelection/>
+      
 
       <a className="netlify-identity-button" href="loginTest">Log in</a>
     

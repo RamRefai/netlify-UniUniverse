@@ -9,7 +9,7 @@ import RMP from 'pages/implementation/RMP.js'
 
 function NavigationMenu() {
   return (
-    <nav>
+    <nav id='navContainer'>
       <ul>
         <li>
             <Link href="../implementation/chatBox">
@@ -37,8 +37,8 @@ function NavigationMenu() {
             </Link>
         </li>
         <li>
-            <Link href="../implementation/interviewHelp">
-                <a>Parking Selection</a>
+            <Link href="../implementation/parkingSelection">
+                <a>Parking Finder</a>
             </Link>
         </li>
         <li>

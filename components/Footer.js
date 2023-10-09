@@ -4,8 +4,8 @@ export default function Footer() {
   return (
     <>
       <footer className={styles.footer}>
-        <p>Made By students For Students. </p>
-        <img src="/logo-netlify.svg" alt="Netlify Logo" className={styles.logo} />
+        <p>Made <span STYLE={"text-decoration:underline"}>By</span> students <span STYLE={"text-decoration:underline"}>For</span>  Students. </p>
+        <img src="/logo-netlify.svg" alt="Uni Universe Logo" className={styles.logo} />
       </footer>
     </>
   )

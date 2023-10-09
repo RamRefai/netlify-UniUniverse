@@ -325,3 +325,7 @@ h1 {
 #campusNextButton:hover {
   background-color: #0056b3; /* Darker blue color on hover */
 }
+
+#navContainer{
+  display:inline-block;
+}
