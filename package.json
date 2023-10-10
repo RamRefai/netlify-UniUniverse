@@ -12,10 +12,11 @@
     "axios": "^1.5.0",
     "dotenv": "^16.3.1",
     "netlify-identity-widget": "^1.9.2",
-    "next": "^12.1.5",
+    "next": "^13.5.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-reveal": "^1.2.2",
+    "typeit-react": "^2.6.4",
     "yarn": "^1.22.19"
   }
 }

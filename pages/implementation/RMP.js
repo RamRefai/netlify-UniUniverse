@@ -2,10 +2,11 @@
 function RMP() {
 
 
-    return(
+    return (
         <div>
             <p>yo</p>
         </div>
-    )}
+    )
+}
 
-    export default RMP
+export default RMP

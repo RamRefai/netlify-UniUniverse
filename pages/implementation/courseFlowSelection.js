@@ -2,10 +2,11 @@
 function courseFlowSelection() {
 
 
-    return(
+    return (
         <div>
             <p>yo</p>
         </div>
-    )}
+    )
+}
 
-    export default courseFlowSelection
+export default courseFlowSelection

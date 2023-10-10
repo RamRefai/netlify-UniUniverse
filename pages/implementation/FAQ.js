@@ -2,10 +2,11 @@
 function FAQ() {
 
 
-    return(
+    return (
         <div>
             <p>yo</p>
         </div>
-    )}
+    )
+}
 
-    export default FAQ
+export default FAQ

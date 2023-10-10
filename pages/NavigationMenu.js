@@ -8,48 +8,23 @@ import parkingSelection from 'pages/implementation/parkingSelection.js'
 import RMP from 'pages/implementation/RMP.js'
 
 function NavigationMenu() {
-  return (
-    <nav id='navContainer'>
-      <ul>
-        <li>
-            <Link href="../implementation/chatBox">
-                <a>Chat box</a>
-            </Link>
-        </li>
-        <li>
-            <Link href="../implementation/courseFlowSelection">
-                <a>Course Flow Diagrams</a>
-            </Link>
-        </li>
-        <li>
-            <Link href="../implementation/FAQ">
-                <a>FAQ</a>
-            </Link>
-        </li>
-        <li>
-            <Link href="../implementation/importantLinks">
-                <a>Important Links</a>
-            </Link>
-        </li>
-        <li>
-            <Link href="../implementation/interviewHelp">
-                <a>Interview Help</a>
-            </Link>
-        </li>
-        <li>
-            <Link href="../implementation/parkingSelection">
-                <a>Parking Finder</a>
-            </Link>
-        </li>
-        <li>
-            <Link href="../implementation/RMP">
-                <a>Rate my Professor Add-on</a>
-            </Link>
-        </li>
-        {/* Add links for other components as needed */}
-      </ul>
-    </nav>
-  );
+    return (
+        <div className="nav-menu">
+            <Link href="../implementation/chatBox">chat Box</Link>
+            <Link href="../implementation/courseFlowSelection">Course Flow Diagrams</Link>
+
+            <Link href="../implementation/FAQ">FAQ </Link>
+
+            <Link href="../implementation/importantLinks">Important Links </Link>
+
+            <Link href="../implementation/interviewHelp">Interview Help </Link>
+
+            <Link href="../implementation/parkingSelection">Parking Finder </Link>
+
+            <Link href="../implementation/RMP">Rate my Professor Add-on </Link>
+
+            </div>
+    );
 }
 
 export default NavigationMenu;

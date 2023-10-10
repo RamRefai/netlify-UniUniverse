@@ -3,21 +3,21 @@ import netlifyIdentity from 'netlify-identity-widget'
 import CampusSelection from './CampusSelection';
 function loginTest() {
 
-       
-            netlifyIdentity.on("init", user=>console.log(user));
-            netlifyIdentity.on("login", user=>console.log(user));
-            netlifyIdentity.on("logout", ()=>console.log("Logged out"));
-            netlifyIdentity.on("error", err=>console.error("Logged out"));
-            netlifyIdentity.on("open", ()=>console.log("Widget opened"));
-            netlifyIdentity.on("close", ()=>console.log("Widget closed"));
 
-        
-            function changeLocale(locale) {
-                netlifyIdentity.setLocale(locale)
-            }
-            
+    netlifyIdentity.on("init", user => console.log(user));
+    netlifyIdentity.on("login", user => console.log(user));
+    netlifyIdentity.on("logout", () => console.log("Logged out"));
+    netlifyIdentity.on("error", err => console.error("Logged out"));
+    netlifyIdentity.on("open", () => console.log("Widget opened"));
+    netlifyIdentity.on("close", () => console.log("Widget closed"));
 
-            return(
+
+    function changeLocale(locale) {
+        netlifyIdentity.setLocale(locale)
+    }
+
+
+    return (
 
 
         <div className="main">
@@ -25,13 +25,13 @@ function loginTest() {
                 <h2>
                     <a href="https://www.netlify.com">Netlify Identity</a>
                 </h2>
-    
+
             </div>
             <div className="hands-on-area">
                 <div className="single-button">
                     <span className="label">Single button example:</span>
                     <div data-netlify-identity-button>
-                    <a className="netlify-identity-button" href="#">Log in</a>
+                        <a className="netlify-identity-button" href="#">Log in</a>
                     </div>
                 </div>
                 <div className="multiple-buttons">
@@ -45,7 +45,7 @@ function loginTest() {
                 <div>
                     <a href="https://github.com/netlify/netlify-identity-widget" className="github-link">Open sourced on GitHub</a>
                 </div>
-                <CampusSelection/>
+                <CampusSelection />
                 <div>
                     <label htmlFor="locale" className="select-locale">Select Widget Locale</label>
                     <select name="locale" id="locale" onchange="changeLocale(this.value)">
@@ -59,8 +59,8 @@ function loginTest() {
                     </select>
                 </div>
             </div>
-            <Footer/>
         </div>
-)}
+    )
+}
 
 export default loginTest;

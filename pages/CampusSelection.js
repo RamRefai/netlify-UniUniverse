@@ -30,7 +30,7 @@ function CampusSelection() {
 
         {/* Add more options as needed */}
       </select>
-      <button id = "campusNextButton" onClick={handleNext}>Next</button>
+      <button id="campusNextButton" onClick={handleNext}>Next</button>
     </div>
   );
 }

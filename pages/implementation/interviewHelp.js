@@ -17,13 +17,13 @@ function InterviewHelp() {
     try {
       // Define the API endpoint for ChatGPT
       const apiEndpoint = 'https://api.openai.com/v1/chat/completions';
-  
+
       // Define your OpenAI API key (replace with your actual API key)
-      
-  
+
+
       // Define the prompt text (use the jobRole state or customQuestions state, depending on the user's choice)
       const promptText = generateQuestions ? `Generate interview questions for ${jobRole}` : customQuestions;
-        console.log(promptText);
+      console.log(promptText);
       // Define the data to be sent in the request
 
 
@@ -31,27 +31,27 @@ function InterviewHelp() {
         prompt: promptText,
         max_tokens: 50, // Adjust the number of tokens as needed
       };
-  
-      
+
+
       // Define request headers, including your API key
       const headers = {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${process.env.API_KEY}`,
       };
-  
+
       // Make the API request using Axios
       const response = await axios.post(apiEndpoint, requestData, { headers });
-  
+
       // Extract the generated questions from the response
       const generatedQuestions = response.data.choices[0].text;
-  
+
       // Display the generated questions or take further action
       alert(`Generated Questions:\n${generatedQuestions}`);
     } catch (error) {
       console.error('Error generating interview questions:', error);
     }
   };
-  
+
 
   return (
     <div>
@@ -72,7 +72,7 @@ function InterviewHelp() {
             Select Job Role:
             <select value={jobRole} onChange={(e) => setJobRole(e.target.value)}>
               <option value="Computer Science Intern">Computer Science intern</option>
-            
+
               <option value="Information Systems Intern">Information Systems intern</option>
               {/* Add more options as needed */}
             </select>

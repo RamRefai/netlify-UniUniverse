@@ -2,10 +2,11 @@
 function chatBox() {
 
 
-    return(
+    return (
         <div>
             <p>yo</p>
         </div>
-    )}
+    )
+}
 
-    export default chatBox
+export default chatBox

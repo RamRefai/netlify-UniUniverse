@@ -2,10 +2,11 @@
 function importantLinks() {
 
 
-    return(
+    return (
         <div>
             <p>yo</p>
         </div>
-    )}
+    )
+}
 
-    export default importantLinks
+export default importantLinks

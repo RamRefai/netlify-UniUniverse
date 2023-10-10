@@ -18,9 +18,9 @@ function Campus1() {
         {/* Add content specific to Campus 1 */}
 
       </main>
-    <aside>
-        <NavigationMenu/>
-    </aside>
+      <aside>
+        <NavigationMenu />
+      </aside>
     </div>
   );
 }
