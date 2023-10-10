@@ -4,7 +4,7 @@ function FAQ() {
 
     return (
         <div>
-            <p>yo</p>
+            <p>"I'm so cool, even I wanna be like me" - Gucci Mane</p>
         </div>
     )
 }

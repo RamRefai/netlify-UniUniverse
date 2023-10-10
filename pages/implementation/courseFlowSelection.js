@@ -4,7 +4,7 @@ function courseFlowSelection() {
 
     return (
         <div>
-            <p>yo</p>
+            <p>"I got so much cheese, I could open up a deli" - E-40</p>
         </div>
     )
 }

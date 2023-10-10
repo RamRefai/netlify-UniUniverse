@@ -4,7 +4,7 @@ function importantLinks() {
 
     return (
         <div>
-            <p>yo</p>
+            <p>"Got so many chains, they call me Chaining Tatum" - Drake</p>
         </div>
     )
 }
