@@ -3,35 +3,30 @@ import axios from 'axios';
 
 
 
+
+
 function InterviewHelp() {
   // State to track user selections
   const [generateQuestions, setGenerateQuestions] = useState(false);
   const [jobRole, setJobRole] = useState('');
   const [customQuestions, setCustomQuestions] = useState('');
-  const initialRequestData = {
-    prompt: '', // Placeholder value, will be updated within the function
-    max_tokens: 50, // Adjust the number of tokens as needed
-  };
+
   // Function to generate interview questions
   const generateInterviewQuestions = async () => {
     try {
       // Define the API endpoint for ChatGPT
       const apiEndpoint = 'https://api.openai.com/v1/chat/completions';
 
-      // Define your OpenAI API key (replace with your actual API key)
-
-
       // Define the prompt text (use the jobRole state or customQuestions state, depending on the user's choice)
-      const promptText = generateQuestions ? `Generate interview questions for ${jobRole}` : customQuestions;
-      console.log(promptText);
+      const promptText = generateQuestions
+        ? `Generate interview questions for ${jobRole}`
+        : customQuestions;
+
       // Define the data to be sent in the request
-
-
       const requestData = {
         prompt: promptText,
         max_tokens: 50, // Adjust the number of tokens as needed
       };
-
 
       // Define request headers, including your API key
       const headers = {
@@ -52,11 +47,10 @@ function InterviewHelp() {
     }
   };
 
-
   return (
-    <div>
+    <div className="interview-help-container">
       <h1>Interview Help</h1>
-      <div>
+      <div className="checkbox-label">
         <label>
           <input
             type="checkbox"
@@ -67,22 +61,22 @@ function InterviewHelp() {
         </label>
       </div>
       {generateQuestions && (
-        <div>
+        <div className="select-label">
           <label>
             Select Job Role:
-            <select value={jobRole} onChange={(e) => setJobRole(e.target.value)}>
+            <select className="select-input" value={jobRole} onChange={(e) => setJobRole(e.target.value)}>
               <option value="Computer Science Intern">Computer Science intern</option>
-
               <option value="Information Systems Intern">Information Systems intern</option>
               {/* Add more options as needed */}
             </select>
           </label>
         </div>
       )}
-      <div>
+      <div className="textarea-label">
         <label>
           Practice with Your Own Questions:
           <textarea
+            className="textarea-input"
             value={customQuestions}
             onChange={(e) => setCustomQuestions(e.target.value)}
             rows="4"
@@ -90,8 +84,8 @@ function InterviewHelp() {
           />
         </label>
       </div>
-      <div>
-        <button onClick={generateInterviewQuestions}>Generate Interview Questions</button>
+      <div className="button-container">
+        <button className="button" onClick={generateInterviewQuestions}>Generate Interview Questions</button>
       </div>
     </div>
   );

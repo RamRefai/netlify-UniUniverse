@@ -28,7 +28,10 @@ code {
 }
 .unipal{
   font-size:100px;
-  margin-bottom:50px;
+  margin-bottom:75px;
+  display:inline;
+  white-space: nowrap;
+  display:flex;
 }
 .container {
   height: 100vh;
@@ -298,7 +301,7 @@ h1 {
 /* Style the dropdown itself */
 #campusDropdown {
   appearance: none; /* Remove default styles on some browsers */
-  border: 1px solid #ccc; /* Add a border */
+  border: 2px solid rgb(0, 0, 0); /* Add a border */
   border-radius: 4px; /* Rounded corners */
   padding: 8px 12px; /* Padding inside the dropdown */
   font-size: 16px; /* Adjust font size */
@@ -322,7 +325,7 @@ h1 {
 #campusNextButton {
   appearance: none; /* Remove default styles on some browsers */
   border: none; /* Remove button border */
-  background-color: #007bff; /* Button background color */
+  background-color: black; /* Button background color */
   color: white; /* Button text color */
   padding: 10px 20px; /* Padding inside the button */
   border-radius: 4px; /* Rounded corners */
@@ -332,7 +335,7 @@ h1 {
 
 /* Change button color on hover */
 #campusNextButton:hover {
-  background-color: #0056b3; /* Darker blue color on hover */
+  background-color: #FF6969; /* Darker blue color on hover */
 }
 
 #navContainer{
@@ -363,4 +366,35 @@ a:visited{
 #parking-header{
   font-size:40;
   font-weight: bold;
+}
+/* InterviewHelp.css */
+.interview-help-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.checkbox-label {
+  margin-bottom: 10px;
+}
+
+.select-label,
+.textarea-label,
+.button-container {
+  margin-top: 10px;
+}
+
+.select-input,
+.textarea-input,
+.button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.accent{
+  color:#FF6969;
 }

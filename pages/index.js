@@ -22,19 +22,22 @@ export default function Home() {
 
       <main>
 
-      <TypeIt
-        options={{
-          strings: ['uni.pal'], // Text to be typed
-          speed: 100, // Typing speed (adjust as needed)
-          loop: true, // Enable looping
-          loopDelay: 2000, // Delay before restarting the loop (in milliseconds)
-        }}
-        className="unipal"
-      />
-          <h1>Choose your Campus</h1>
-          <CampusSelection />
+        <TypeIt
+          options={{
+            strings: [
+              'uni','<span style="white-space: nowrap; color: #FF6969;">.pal</span>'], // Text to be typed
+            speed: 100, // Typing speed (adjust as needed)
+            loop: true, // Enable looping
+            loopDelay: 2000, // Delay before restarting the loop (in milliseconds)
+          }}
+          className="unipal"
+        />
 
-        
+        <Bounce>
+          <h1 className="accent">Choose your Campus</h1>
+          <CampusSelection />
+        </Bounce>
+
         {/* <a className="netlify-identity-button" href="loginTest">Log in</a> */}
 
 

@@ -8,12 +8,15 @@ import parkingSelection from 'pages/implementation/parkingSelection.js'
 import RMP from 'pages/implementation/RMP.js'
 
 function NavigationMenu() {
+    <style>
+    </style>
     return (
+
         <div className="nav-menu">
             <Link href="../implementation/chatBox">chat Box</Link>
             <Link href="../implementation/courseFlowSelection">Course Flow Diagrams</Link>
 
-            <Link href="../implementation/FAQ">FAQ </Link>
+            <Link href="../implementation/FAQ">FAQ</Link>
 
             <Link href="../implementation/importantLinks">Important Links </Link>
 
@@ -23,7 +26,7 @@ function NavigationMenu() {
 
             <Link href="../implementation/RMP">Rate my Professor Add-on </Link>
 
-            </div>
+        </div>
     );
 }
 
